@@ -1,5 +1,5 @@
 """
-projekt_1.py: první projekt do Engeto Online Python Akademie
+textovy_analyzator.py: první projekt do Engeto Online Python Akademie
 author: Jan Březina
 email: brezinajan@proton.me
 discord: Ruuda #1658
