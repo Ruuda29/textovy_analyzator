@@ -61,7 +61,7 @@ if uzivatel in uzivatele and heslo == uzivatele [uzivatel]:
     print(oddelovac)
     text = input("Zvol text od 1 do 3: ")
     print(oddelovac)
-    if text.isnumeric() and 0<int(text)<4:
+    if text.isnumeric() and 0 < int(text) < 4:
         zvoleny_text = TEXTS[int(text)-1].split()
         vycisteny_text = list()
         
@@ -70,14 +70,14 @@ if uzivatel in uzivatele and heslo == uzivatele [uzivatel]:
         
         for slovo in vycisteny_text:
             if slovo.istitle():
-               pocet_vel_pismeno_zacatek = pocet_vel_pismeno_zacatek + 1
+               pocet_vel_pismeno_zacatek += 1
             elif slovo.isupper():
-               pocet_velka_pismena = pocet_velka_pismena + 1
+               pocet_velka_pismena += 1
             elif slovo.islower():
-               pocet_mala_pismena = pocet_mala_pismena + 1
+               pocet_mala_pismena += 1
             elif slovo.isnumeric():
-                pocet_cisel = pocet_cisel + 1 
-                suma_cisel = suma_cisel + int(slovo)
+                pocet_cisel += 1 
+                suma_cisel += int(slovo)
             else:
                 continue
         
@@ -141,7 +141,7 @@ if uzivatel in uzivatele and heslo == uzivatele [uzivatel]:
             f"{delka_slov_cetnost[delka]}"
             ) 
     else:
-        print("Špatně zvolený text.")
+        print("Špatně zvolený text. Ukončuji program.")
         quit()
 else:
     print("Neregistovaný uživatel. Ukončuji program.")
