@@ -1,3 +1,5 @@
 # textovy_analyzator
 
-Ahoj tada
+Ahoj,
+
+můj textový analyzátor analyzuje texty! ;-)
